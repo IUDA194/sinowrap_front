@@ -1,0 +1,109 @@
+.product_card_template {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.product_card_image_template {
+    padding-right: 20px;
+}
+
+.product_card_text_template {
+    padding-left: 20px;
+}
+
+.product_card_big_image {
+    width: 100%;
+    height: 545px;
+    border-radius: 30px 30px 0 0;
+    object-fit: cover;
+}
+
+.product_card_small_images_template {
+    width: 100%;
+    display: inline-flex;
+    column-gap: 7px;
+    margin-top: 1px;
+}
+
+.product_card_small_image {
+    width: calc(33% - 1px);
+    height: 167px;
+    object-fit: cover;
+}
+
+.product_card_small_image:first-child {
+    border-radius: 0 0 0 30px;
+}
+
+.product_card_small_image:last-child {
+    border-radius: 0 0 30px 0;
+}
+
+.product_card_small_text {
+    color: #1F1F1F;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+
+.product_card_big_text {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: #1F1F1F;
+    font-size: 48px;
+    font-weight: 510;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+
+.product_card_info {
+    margin-top: 63.5px;
+}
+
+.product_description {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    color: #1F1F1F;
+    font-size: 20px;
+    line-height: 33.07px;
+    word-wrap: break-word
+}
+  
+.product_description_bold {
+    font-size: 20px;
+    font-weight: 510;
+    margin-right: 20px;
+    word-wrap: break-word
+}
+
+.product_price {
+    margin-top: 24px;
+    color: #31BE00;
+    font-size: 24px;
+    font-weight: 510;
+    word-wrap: break-word
+}
+
+.product_price > span {
+    color: #1F1F1F;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.product_cart_btn {
+    max-width: max-content;
+    border-radius: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 79px;
+    padding-right: 79px;
+    background: linear-gradient(91deg, #FFC8C8 0%, #FF71C5 100%);
+    text-align: center;
+    color: #0E0E0E;
+    font-size: 24px;
+    font-weight: 590;
+    cursor: pointer;
+}
